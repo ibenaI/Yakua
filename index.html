@@ -3,19 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yakua</title>
-  <meta name="description" content="Yakua">
+  <title>Yakua — Productor musical</title>
+  <meta name="description" content="Yakua, productor musical. Proyectos, trabajos realizados, recorrido y servicios de producción, beats, mezcla y mastering. Consultá directo por WhatsApp.">
+  <meta name="theme-color" content="#0b0b10">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
   <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#inicio" aria-label="Yakua, inicio">YAKUA</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="visually-hidden">Abrir menú</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul class="site-nav__list">
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
+    <!-- 1. Hero -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">Productor musical</p>
+        <h1 class="hero__title" id="hero-title">YAKUA</h1>
+        <p class="hero__lead">Producción, beats y sesiones para artistas que quieren sonar distinto.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#servicios">Ver servicios</a>
+          <a class="btn btn--ghost" href="#trabajos">Ver trabajos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Trabajos realizados (colaboraciones / producciones para otros artistas) -->
+    <section class="section section--alt" id="trabajos" aria-labelledby="trabajos-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Producciones para artistas</p>
+          <h2 class="section__title" id="trabajos-title">Trabajos realizados</h2>
+        </header>
+
+        <ul class="grid grid--2 work-list" role="list">
+          <li class="work">
+            <h3 class="work__artist">Artista</h3>
+            <p class="work__track">“Nombre del tema”</p>
+            <p class="work__role">Producción · Mix</p>
+          </li>
+          <li class="work">
+            <h3 class="work__artist">Artista</h3>
+            <p class="work__track">“Nombre del tema”</p>
+            <p class="work__role">Producción · Master</p>
+          </li>
+          <li class="work">
+            <h3 class="work__artist">Artista</h3>
+            <p class="work__track">“Nombre del tema”</p>
+            <p class="work__role">Beat</p>
+          </li>
+          <li class="work">
+            <h3 class="work__artist">Artista</h3>
+            <p class="work__track">“Nombre del tema”</p>
+            <p class="work__role">Session</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Sobre mí (incluye el recorrido) -->
+    <section class="section about" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <div class="container about__inner">
+        <figure class="about__media">
+          <!-- Reemplazar por la foto real: <img src="img/yakua.jpg" alt="Yakua en el estudio" width="600" height="800"> -->
+        </figure>
+
+        <div class="about__content">
+          <p class="eyebrow">Quién soy</p>
+          <h2 class="section__title" id="sobre-mi-title">Sobre mí</h2>
+
+          <div class="about__text">
+            <p>Párrafo de presentación. Origen, primeros pasos en la música, qué define el sonido de Yakua.</p>
+            <p>Segundo párrafo. Hitos importantes, artistas con los que trabajó, evolución del estilo.</p>
+            <p>Tercer párrafo. Visión, lo que busca en cada producción, mensaje para los artistas que quieran trabajar juntos.</p>
+          </div>
+
+          <!-- Contadores: cambiar data-count por los números reales; data-prefix es opcional -->
+          <dl class="stats">
+            <div class="stats__item">
+              <dt class="stats__label">Proyectos</dt>
+              <dd class="stats__value" data-count="0" data-prefix="+">+0</dd>
+            </div>
+            <div class="stats__item">
+              <dt class="stats__label">Artistas</dt>
+              <dd class="stats__value" data-count="0" data-prefix="+">+0</dd>
+            </div>
+            <div class="stats__item">
+              <dt class="stats__label">Años de carrera</dt>
+              <dd class="stats__value" data-count="0">0</dd>
+            </div>
+          </dl>
+
+          <!-- Recorrido -->
+          <div class="about__timeline" id="recorrido">
+            <h3 class="about__subtitle">Recorrido</h3>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <time class="timeline__year" datetime="2020">2020</time>
+                <h4 class="timeline__title">Hito del recorrido</h4>
+                <p class="timeline__text">Descripción breve de este momento.</p>
+              </li>
+              <li class="timeline__item">
+                <time class="timeline__year" datetime="2023">2023</time>
+                <h4 class="timeline__title">Hito del recorrido</h4>
+                <p class="timeline__text">Descripción breve de este momento.</p>
+              </li>
+              <li class="timeline__item">
+                <time class="timeline__year" datetime="2026">2026</time>
+                <h4 class="timeline__title">Hito del recorrido</h4>
+                <p class="timeline__text">Descripción breve de este momento.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Proyectos propios -->
+    <section class="section section--alt" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Lo último</p>
+          <h2 class="section__title" id="proyectos-title">Proyectos</h2>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__media" aria-hidden="true"></div>
+            <div class="card__body">
+              <h3 class="card__title">Nombre del proyecto</h3>
+              <p class="card__meta">Single · 2026</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media" aria-hidden="true"></div>
+            <div class="card__body">
+              <h3 class="card__title">Nombre del proyecto</h3>
+              <p class="card__meta">EP · 2025</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media" aria-hidden="true"></div>
+            <div class="card__body">
+              <h3 class="card__title">Nombre del proyecto</h3>
+              <p class="card__meta">Session · 2025</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Servicios: cada card arma su link de WhatsApp desde data-service (ver js/main.js) -->
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Trabajemos juntos</p>
+          <h2 class="section__title" id="servicios-title">Servicios</h2>
+          <p class="section__lead">Elegí un servicio y consultame directo por WhatsApp.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="service-card">
+            <h3 class="service-card__title">Producción musical</h3>
+            <p class="service-card__text">Tu tema de la idea a la versión final: composición, arreglos y sonido.</p>
+            <p class="service-card__price">Consultar</p>
+            <a class="btn btn--primary btn--block" data-service="Producción musical" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </article>
+          <article class="service-card">
+            <h3 class="service-card__title">Beats a medida</h3>
+            <p class="service-card__text">Instrumentales hechos para tu estilo y tu voz.</p>
+            <p class="service-card__price">Consultar</p>
+            <a class="btn btn--primary btn--block" data-service="Beats a medida" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </article>
+          <article class="service-card">
+            <h3 class="service-card__title">Mezcla y mastering</h3>
+            <p class="service-card__text">Sonido profesional y listo para plataformas.</p>
+            <p class="service-card__price">Consultar</p>
+            <a class="btn btn--primary btn--block" data-service="Mezcla y mastering" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contacto -->
+    <section class="section section--alt contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <h2 class="section__title" id="contacto-title">¿Tenés un proyecto?</h2>
+        <p class="section__lead">Escribime y lo hablamos.</p>
+        <a class="btn btn--primary" data-service="" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span data-year></span> Yakua</p>
+      <ul class="social" role="list">
+        <li><a href="#" aria-label="Instagram de Yakua">Instagram</a></li>
+        <li><a href="#" aria-label="YouTube de Yakua">YouTube</a></li>
+        <li><a href="#" aria-label="Spotify de Yakua">Spotify</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>
