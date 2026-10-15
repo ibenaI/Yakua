@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+:root {
+  /* Colores */
+  --color-primary: #1f6f50;
+  --color-secondary: #e0a43a;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f5f3ee;
+  --color-border: #e2e0da;
+
+  /* Tipografía */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-heading: var(--font-body);
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --lh-tight: 1.2;
+  --lh-base: 1.6;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Espaciados */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Layout */
+  --container-max: 72rem;
+  --radius: 0.5rem;
+}
+
+/* ==========================================================================
+   Reset / base (mobile first)
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: var(--lh-tight);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+/* ==========================================================================
+   Tablet (≥ 48em / 768px)
+   ========================================================================== */
+@media (min-width: 48em) {
+  :root {
+    --fs-xl: 2rem;
+    --fs-2xl: 2.75rem;
+  }
+
+  .container {
+    padding-inline: var(--space-lg);
+  }
+}
+
+/* ==========================================================================
+   Desktop (≥ 64em / 1024px)
+   ========================================================================== */
+@media (min-width: 64em) {
+  :root {
+    --fs-2xl: 3.25rem;
+  }
+}
