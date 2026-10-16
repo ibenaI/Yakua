@@ -13,9 +13,9 @@
   --color-primary-hover: #5286ff;
   --color-accent: #00e5ff;
   --color-on-primary: #ffffff;
-  --color-cta: #ffd60a;
-  --color-cta-hover: #ffe24d;
-  --color-on-cta: #0b0b10;
+  --color-cta: #e01e2b;
+  --color-cta-hover: #c0141f;
+  --color-on-cta: #ffffff;
 
   /* Tipografía */
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
