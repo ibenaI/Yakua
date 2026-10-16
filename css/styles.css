@@ -13,6 +13,9 @@
   --color-primary-hover: #5286ff;
   --color-accent: #00e5ff;
   --color-on-primary: #ffffff;
+  --color-cta: #ffd60a;
+  --color-cta-hover: #ffe24d;
+  --color-on-cta: #0b0b10;
 
   /* Tipografía */
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -176,12 +179,12 @@ ol {
 }
 
 .btn--primary {
-  background: var(--color-primary);
-  color: var(--color-on-primary);
+  background: var(--color-cta);
+  color: var(--color-on-cta);
 }
 
 .btn--primary:hover {
-  background: var(--color-primary-hover);
+  background: var(--color-cta-hover);
 }
 
 .btn--ghost {
